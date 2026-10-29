@@ -1,5 +1,5 @@
-#EVIDENCIA 
-##Evidencia inicial de la creación de estructura y el funcionamiento correcto del GitActions 
+# EVIDENCIA 
+## Evidencia inicial de la creación de estructura y el funcionamiento correcto del GitActions 
 <img width="758" height="634" alt="image" src="https://github.com/user-attachments/assets/c51896d7-d360-4501-9536-5278a0a77c64" />
 <img width="724" height="662" alt="image" src="https://github.com/user-attachments/assets/e43e7109-5bef-4269-9aab-2b6c46c39308" />
 ##Paso 6 -Provocar una falla de forma controlada
@@ -14,7 +14,7 @@ Si , los steps anteriormente finalizaron correctamente, en la imagen se observa 
 ¿Qué diferencia visual encuentras entre esta ejecución y la anterior?
 Por un lado en el panel lateral izquierdo vemos como el trabajo de validar-python aparece con un marcado icono rojo , y dentro de los logs del paso “Ejecutar pruebas” se despliega una sección detallada del error  “FAILURES” presentado en lugar de mostrar únicamente la lista de pruebas con estado “PASSED”.
 
-##Paso 7 – Enter el valor de Actions en un Pull Request 
+## Paso 7 – Enter el valor de Actions en un Pull Request 
 <img width="593" height="150" alt="image" src="https://github.com/user-attachments/assets/f5e3fd10-1f84-4c85-9a50-e91d000f0272" />
 <img width="561" height="459" alt="image" src="https://github.com/user-attachments/assets/6c87d206-22bd-4aa2-b1af-47c3e6679afe" />
 <img width="719" height="524" alt="image" src="https://github.com/user-attachments/assets/735f99b1-bcb4-4955-96e6-942f9ee62980" />
@@ -22,7 +22,7 @@ Por un lado en el panel lateral izquierdo vemos como el trabajo de validar-pytho
 ## Paso 8 -  Ejecutar el workflow manualmente
 ![Uploading image.png…]()
 
-##PREGUNTAS DE ANÁLISIS PARA RESPONDER DESPUÉS DE EJECUTAR
+## PREGUNTAS DE ANÁLISIS PARA RESPONDER DESPUÉS DE EJECUTAR
 1. Identifica una ejecución exitosa y una fallida. ¿Qué commit o cambio produjo cada una y qué step determinó el resultado? 
 Ejecución fallida: Al realizar el commit donde cambie el estado de “CRÍTICO” a “NORMAL” intencionalmente causo que el workflow fallara. El step que determinnó el resultado fue “Ejecutar pruebas”
 Ejecución exitosa: Cuando volvi a restaurar como tenia antes de realizar el commit de el cambio de estado se puede observar como todos los steps funcionaban correctamente.
