@@ -20,7 +20,7 @@ Por un lado en el panel lateral izquierdo vemos como el trabajo de validar-pytho
 <img width="719" height="524" alt="image" src="https://github.com/user-attachments/assets/735f99b1-bcb4-4955-96e6-942f9ee62980" />
 
 ## Paso 8 -  Ejecutar el workflow manualmente
-![Uploading image.png…]()
+<img width="596" height="435" alt="image" src="https://github.com/user-attachments/assets/9d2d3ff8-150c-48bc-b097-c7c7c28cd9e4" />
 
 ## PREGUNTAS DE ANÁLISIS PARA RESPONDER DESPUÉS DE EJECUTAR
 1. Identifica una ejecución exitosa y una fallida. ¿Qué commit o cambio produjo cada una y qué step determinó el resultado? 
@@ -47,7 +47,8 @@ Aporta el nombre de usuario de la persona que inició la ejecución o hizo el pu
 7. Si tu workflow pasa pero la aplicación completa falla localmente con Docker, ¿significa que Actions “no sirve”? Explica qué está verificando y qué no. 
 No significa que no sirva, significa que Actions no arregla nada , solo verifica lo que ya esta desarrollado . En este caso, Actions solo está comprobando la sintaxis y las pruebas unitarias de Python. No está levantando Docker, ni base de datos, ni contenedores  porque el equipo decide no automatizar pruebas tan pesadas en cada push por temas de tiempo. 
 
-8. Propón tres checks para tu variante de RapidGo. Para cada uno explica qué error concreto evitaría. 
+8. Propón tres checks para tu variante de RapidGo. Para cada uno explica qué error concreto evitaría.
+   
 Check 1: Validar umbral crítico de demanda 
 Que probraria: Que el sistema identifique correctamente cuando se superan los 50ped/min y dispare la alerta de nivel “CRITICAL”.
 Error que evitara: Evitaria que un error de código clasifique por accidente un pido crítico como “NORMAL” , lo que causaría que no se active la tarifa y que el sistema colapse por falta de repartidores. 
